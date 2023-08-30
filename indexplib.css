@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+
+	background-color: #200320;
+}
+
+input {
+	border: 2px salmon;
+	border-radius: 5px;
+	width: 300px;
+	height: 25px;
+	text-align: center;
+	padding-left: 20px;
+}
+
+input:hover {
+	text-align: left;
+	filter: drop-shadow(8px 5px 6px rgb(206, 243, 72));
+}
+
+.Detials {
+	border: 3px solid #398739;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 600px;
+	margin: 100px auto 0;
+	padding: 35px;
+
+}
+
+.Detials h1 {
+	color: aqua;
+	text-transform: uppercase;
+	text-shadow: 6px 4px 20px;
+	position: relative;
+
+}
+
+.Detials h1:hover {
+	color:palevioletred;
+}
+
+.form {
+	text-align: center;
+	font-weight: 500px;
+	border: 2px solid #222;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px 0;
+
+}
+
+.btn {
+	border: 2px salmon;
+	border-radius: 5px;
+	display: inline-flex;
+	filter: drop-shadow(10px 8px 6px blue);
+	background-color: wheat;
+	-webkit-text-emphasis-style: filled circle;
+	-webkit-text-emphasis-position: under;
+	text-emphasis-color: rgb(238, 101, 201);
+	cursor: pointer;
+	transition: all 2ms;
+}
+
+.btn:nth-child(2):hover {
+	text-shadow: 6px 7px 5px;
+	filter: drop-shadow(10px 8px 6px lightgreen);
+}
+
+.btn:nth-child(3):hover {
+	filter: drop-shadow(10px 8px 6px #f24c0be8);
+}
+
+.btn:nth-child(4):hover {
+	filter: drop-shadow(10px 8px 6px whitesmoke);
+}
+
+.btn:hover {
+	filter: drop-shadow(10px 8px 6px  rgb(13, 228, 228));
+}
+#allTitleAndYear:hover{
+	filter: drop-shadow(10px 8px 6px  #ecf249)
+}
+
+#text {
+	font-size: medium;
+	font-weight: 300px;
+	color: white;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+label{
+	color: whitesmoke;
+}
+.control{
+	width: 160px;
+	border-radius: 50px/90px;
+	text-align: center;
+}
+.control:hover{
+	filter: drop-shadow(5px 2px 5px  #49ef17)
+
+}

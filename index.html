@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="indexplib.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Libray</title>
+</head>
+
+<body>
+    <div class="Detials">
+        <h1>
+            <center>Personal Libray</center>
+        </h1>
+        <form>
+            <div class="form">
+                <input type="text" name="Author" id="author" placeholder="Author Name">
+                <br><br>
+                <input type="text" name="Title" id="title" placeholder="Title of the Book">
+                <br><br>
+                <input type="text" name="Year" id="year" placeholder="Publisher Year">
+                <br><br>
+        </form>
+    </div>
+    <label for="status">Did you finished reading<br></label>
+    <br>
+    <select name="sts" id="status" class="control">
+        <option value="Yes">YES</option>
+        <option value="No">NO</option>
+    </select><br><br>
+    <div class="Btn-click">
+        <button class="btn btn-success mt-3" type="submit" id="addbook"><span id="text">AddBook</span></button>
+        <button class="btn btn-success mt-3" type="submit" id="addFornt"><span id="text">Add
+                Fornt</span></span></button>
+        <button class="btn btn-warning mt-3" type="submit" id="removefront"><span id="text">Remove
+                Fornt</span></button>
+        <button class="btn btn-warning mt-3" type="submit" id="removeBack"><span id="text">Remove
+                Last</span></button>
+        <br><br>
+
+    </div>
+    <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#tiye" id="allTitleAndYear">All Title And Year</button>
+  <!-- Modal -->
+  <div class="modal fade" id="tiye" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> Title And Years</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="disModel">
+    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#Author-Search" id="SearchAuthor">Search Author </button>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="Author-Search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Result Title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="disSearch">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+    <div class="alert alert-success" role="alert" id="show" style="margin: 30px;" hidden>
+        <p id="disMessage"></p>
+    </div>
+    </div>
+   
+
+
+    <script src="indexplib.js"></script>
+</body>
+
+</html>
